@@ -21,7 +21,7 @@ function displayProducts(productsToDisplay) {
         const productCard = document.createElement('div');
         productCard.className = 'product-card';
 
-        const ratingStars = '★'.repeat(product.rating) + '☆'.repeat(5 - product.rating);
+        const ratingStars = '★'.repeat(product.rating) + '☆'.repeat(3 - product.rating);
 
         productCard.innerHTML = `
             <img src="${product.image}" alt="${product.title}" class="product-image">
@@ -29,7 +29,7 @@ function displayProducts(productsToDisplay) {
                 <h3 class="product-title">${product.title}</h3>
                 <p class="product-description">${product.description}</p>
                 <div class="product-meta">
-                    <span class="product-price">${product.price.toLocaleString('da-DK')} DKK</span>
+                    <span class="product-price">Minimum ${product.price.toLocaleString('da-DK')} Spiller(e)</span>
                     <span class="product-category">${product.category}</span>
                 </div>
                 <div class="product-rating">${ratingStars}</div>
@@ -53,7 +53,7 @@ function showProductDialog(productId) {
     document.getElementById('dialog-price').textContent = product.price.toLocaleString('da-DK') + ' DKK';
     document.getElementById('dialog-category').textContent = product.category;
 
-    const ratingStars = '★'.repeat(product.rating) + '☆'.repeat(5 - product.rating);
+    const ratingStars = '★'.repeat(product.rating) + '☆'.repeat(3 - product.rating);
     document.getElementById('dialog-rating').textContent = ratingStars;
 
     dialog.showModal(); // åbner som modal med baggrundsdæmpning
