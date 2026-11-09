@@ -1,4 +1,7 @@
 /* Reset og base styles */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +31,88 @@ body {
     padding-bottom: 125px;
 }
 
+h1 a {
+    font-family: 'Bubblegum Sans', sans-serif;
+    font-weight: normal;
+    color : white;
+    font-size: 300%;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url(./img/board.games.png) lightgray 50% / cover no-repeat;
+    
+}
+
+header i {
+    color: white;
+    height: auto;
+    width: 100%;
+    
+}
+header i:hover {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover {
+    cursor: pointer;
+}
+.dropbtn {
+    background-color: #897769;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 15px;
+    position: relative;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.dropbtn i {
+    font-size: 200%;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: auto;
+    right: 0;
+
+    background-color: #897769;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: white;
+    font-size: 120%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    /* Animation */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+
+    transition: opacity 0.3s ease-in,
+                transform 0.3s ease-in,
+                visibility 0.3s ease-in;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
 
 
 .container {
