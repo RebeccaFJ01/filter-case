@@ -542,10 +542,21 @@ footer {
 button#dialog-close
 {
     padding: 2% 8%;
+    color: rgb(12, 11, 11);
+    background-color: var(--light-gray);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+button#dialog-Reserve
+{
+   padding: 2% 8%;
     color: white;
     background-color: var(--secondary-color);
     border: none;
     border-radius: var(--border-radius);
     cursor: pointer;
     transition: var(--transition);
+
 }
