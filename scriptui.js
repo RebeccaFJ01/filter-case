@@ -66,6 +66,8 @@ closeFilter.addEventListener('click', closeFilterPanel);
 overlay.addEventListener('click', closeFilterPanel);
 // Luk-knappen i dialogboksen
 document.getElementById('dialog-close').addEventListener('click', () => dialog.close());
+document.getElementById('dialog-Reserve').addEventListener('click', ()=> {alert("spillet er nu reserveret den næste time, du finder det på række 8!");  
+});
 
 // Luk filter panel
 function closeFilterPanel() {
