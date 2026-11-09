@@ -19,12 +19,7 @@ product.category.toLowerCase().includes(searchText)
 //----------Håndtering af filtreringspanel---------//
 const categories = Array.from(document.querySelectorAll('input[name="category"]:checked')).map(cb =>
     cb.value);
-<<<<<<< HEAD
     const  stemning = Array.from(document.querySelectorAll('input[name="stemning"]:checked')).map(cb =>
-=======
-    const
-Stemninger = Array.from(document.querySelectorAll('input[name="Stemninger"]:checked')).map(cb =>
->>>>>>> 98ba1e03984a01ff0464bc7d5f72fa5c94c66972
     cb.value);
 const minPrice = parseFloat(document.getElementById('min-price').value)
 const maxPrice = parseFloat(document.getElementById('max-price').value)
