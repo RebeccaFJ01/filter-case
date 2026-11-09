@@ -16,7 +16,7 @@ const products = [
         title: "Disney Trivial Pursuit",
         description: "Hidkalder alle disney fans. Nu et helt quiz spil dedikeret til alle fansene. Saml alle mickeys oste ved at svare rigtig på spørgsmålene og bliv kåret til disney MASTER.",
         price: 1299,
-        category: "familiespil",
+        category: "quizspil",
         rating: 4,
         color: "hvid",
         image: "./img/trivial-pursuit.svg"
@@ -26,7 +26,7 @@ const products = [
         title: "Rummikub",
         description: "100% bomuld T-shirt i forskellige farver og størrelser.",
         price: 199,
-        category: "tøj",
+        category: "strategisk",
         rating: 4,
         color: "blå",
         image: "./img/rummikib.svg"
@@ -36,7 +36,7 @@ const products = [
         title: "Partners",
         description: "Moderne designerstol i ægte læder, perfekt til stuen.",
         price: 3499,
-        category: "møbler",
+        category: "brætspil",
         rating: 5,
         color: "brun",
         image: "./img/partners.svg"
@@ -46,7 +46,7 @@ const products = [
         title: "Uno",
         description: "Lær JavaScript på 30 dage - komplet guide for begyndere.",
         price: 299,
-        category: "bøger",
+        category: "kortspil",
         rating: 4,
         color: "sort",
         image: "./img/uno.svg"
@@ -56,7 +56,7 @@ const products = [
         title: "Hint",
         description: "Smartwatch med hjertefrekvensmåler, GPS og 7 dages batteri.",
         price: 2499,
-        category: "familiespil",
+        category: "paratviden",
         rating: 5,
         color: "sort",
         image: "./img/hint.svg"
@@ -66,7 +66,7 @@ const products = [
         title: "Catan",
         description: "Klassiske blue jeans i stretchstof, behagelig pasform.",
         price: 499,
-        category: "tøj",
+        category: "strategi",
         rating: 3,
         color: "blå",
         image: "./img/catan.svg"
@@ -76,7 +76,7 @@ const products = [
         title: "Det Dårlige selskab",
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         price: 8999,
-        category: "møbler",
+        category: "selskabsspil",
         rating: 5,
         color: "brun",
         image: "./img/badselskab.svg"
@@ -86,7 +86,7 @@ const products = [
         title: "Stratego",
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         price: 8999,
-        category: "møbler",
+        category: "strategi",
         rating: 5,
         color: "brun",
         image: "./img/stratego.svg"
@@ -96,7 +96,7 @@ const products = [
         title: "Bezzerwizzer",
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         price: 8999,
-        category: "møbler",
+        category: "quizspil",
         rating: 5,
         color: "brun",
         image: "./img/bezzerwizzer.svg"
@@ -106,7 +106,7 @@ const products = [
         title: "Hitlister",
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         price: 8999,
-        category: "møbler",
+        category: "quizspil",
         rating: 5,
         color: "brun",
         image: "./img/hitster.svg"
@@ -116,7 +116,7 @@ const products = [
         title: "Codenames",
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         price: 8999,
-        category: "møbler",
+        category: "selskabsspil",
         rating: 5,
         color: "brun",
         image: "./img/codenames.svg"
