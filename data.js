@@ -6,7 +6,7 @@ const products = [
         title: "Vildkatten",
         description: "Avanceret smartphone med 5G, 128GB lager og 6,5\" skærm.",
         price: 5999,
-        category: "elektronik",
+        category: "familiespil",
         rating: 5,
         color: "sort",
         image: "./img/Vildkatten.svg"
@@ -16,7 +16,7 @@ const products = [
         title: "Disney Trivial Pursuit",
         description: "Noise-cancelling trådløse hovedtelefoner med 30 timers batteri.",
         price: 1299,
-        category: "elektronik",
+        category: "familiespil",
         rating: 4,
         color: "hvid",
         image: "./img/trivial-pursuit.svg"
@@ -56,7 +56,7 @@ const products = [
         title: "Hint",
         description: "Smartwatch med hjertefrekvensmåler, GPS og 7 dages batteri.",
         price: 2499,
-        category: "elektronik",
+        category: "familiespil",
         rating: 5,
         color: "sort",
         image: "./img/hint.svg"
@@ -99,7 +99,7 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "./img/bexxerwizzer.svg"
+        image: "./img/bezzerwizzer.svg"
     },
             {
         id: 11,
