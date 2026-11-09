@@ -16,6 +16,19 @@ body {
     background-color: #f6f1ea;
 }
 
+#cat {
+   display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  min-height: calc(100vh - 100px); /* viewport minus your 100px header */
+}
+
+#martin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 a {
     font-family: 'Bubblegum Sans', sans-serif;
     font-weight: normal;
@@ -29,7 +42,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color:#9d8778;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url(./img/board.games.png) lightgray 50% / cover no-repeat;
+
 }
 
 header i {
