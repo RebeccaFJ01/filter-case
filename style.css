@@ -125,7 +125,7 @@ header i:hover {
 header {
     text-align: center;
     margin-bottom: 30px;
-    padding: 20px 0;
+    padding: 20px 10px;
     border-bottom: 2px solid var(--medium-gray);
 }
 
@@ -410,8 +410,8 @@ header h1 {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
-    display: flex;           /* NYT */
-    flex-direction: column;  /* NYT */
+    display: flex;          
+    flex-direction: column;  
     height: 100%;
 }
 
@@ -429,8 +429,8 @@ header h1 {
 
 .product-info {
     padding: 20px;
-    display: flex;           /* NYT */
-    flex-direction: column;  /* NYT */
+    display: flex;         
+    flex-direction: column;  
     flex: 1;
 }
 
