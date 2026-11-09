@@ -245,5 +245,7 @@ footer {
     color: #4a3b33;
 }
 .footer-nav a.active {
-    color: #0f5c57
+    color: #0f5c57;
+fill: radial-gradient(35.23% 35.23% at 50.79% 45.24%, #D4EFEB 60%, rgba(122, 137, 135, 0.00) 100%);
+
 }

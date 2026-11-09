@@ -209,14 +209,14 @@ header h1 {
     cursor: pointer;
 }
 
-/* Price range */
-.price-range {
+/* player range */
+.players-range {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.price-input {
+.players-input {
     padding: 10px 15px;
     border: 2px solid var(--medium-gray);
     border-radius: var(--border-radius);
@@ -225,12 +225,12 @@ header h1 {
     transition: var(--transition);
 }
 
-.price-input:focus {
+.players-input:focus {
     outline: none;
     border-color: var(--secondary-color);
 }
 
-.price-separator {
+.players-separator {
     color: var(--dark-gray);
     font-weight: bold;
 }
@@ -361,7 +361,7 @@ header h1 {
     margin-bottom: 15px;
 }
 
-.product-price {
+.product-players {
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--accent-color);
