@@ -371,15 +371,17 @@ header h1 {
 }
 
 .product-players {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--accent-color);
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: rgba(224, 245, 241, 1);
+    padding: 4px 10px;
+    border-radius: 20px;
 }
 
 .product-category {
-    font-size: 0.85rem;
-    color: var(--dark-gray);
-    background-color: var(--light-gray);
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: rgba(224, 245, 241, 1);
     padding: 4px 10px;
     border-radius: 20px;
 }
