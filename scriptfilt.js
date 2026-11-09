@@ -21,7 +21,7 @@ const
 categories = Array.from(document.querySelectorAll('input[name="category"]:checked')).map(cb =>
     cb.value);
     const
-Stemninger = Array.from(document.querySelectorAll('input[name="Stemninger"] :checked')).map(cb =>
+Stemninger = Array.from(document.querySelectorAll('input[name="Stemninger"]:checked')).map(cb =>
     cb.value);
 const minPrice = parseFloat(document.getElementById('min-price').value)
 const maxPrice = parseFloat(document.getElementById('max-price').value)
