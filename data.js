@@ -24,7 +24,7 @@ const products = [
     {
         id: 3,
         title: "Rummikub",
-        description: "100% bomuld T-shirt i forskellige farver og størrelser.",
+        description: "En go blanding af held og strategi. Vær den første til alle komme af med alle brikkerne.",
         price: 2,
         category: "Strategisk",
         rating: 2,
@@ -34,7 +34,7 @@ const products = [
     {
         id: 4,
         title: "Partners",
-        description: "Moderne designerstol i ægte læder, perfekt til stuen.",
+        description: "Et taktisk og underholdende holdspil for fire spillere (to mod to), hvor I samarbejder om at få alle jeres brikker sikkert i mål.",
         price: 4,
         category: "Brætspil",
         rating: 2,
@@ -44,7 +44,7 @@ const products = [
     {
         id: 5,
         title: "Uno",
-        description: "Lær JavaScript på 30 dage - komplet guide for begyndere.",
+        description: "Det gælder om først at komme af med sine kort ved hjælp af farver, tal og drilske specialkort, og huske at råbe UNO!, når du har ét kort tilbage.",
         price: 2,
         category: "Kortspil",
         rating: 1,
@@ -54,7 +54,7 @@ const products = [
     {
         id: 6,
         title: "Hint",
-        description: "Smartwatch med hjertefrekvensmåler, GPS og 7 dages batteri.",
+        description: "Et underholdende selskabsspil, hvor I kæmper hold mod hold. Nyn, tegn, mime eller antyd ledetråde, så dit hold kan gætte ordet uden at ramme de forbudte ord.",
         price: 4,
         category: "Paratviden",
         rating: 1,
@@ -64,7 +64,7 @@ const products = [
     {
         id: 7,
         title: "Catan",
-        description: "Klassiske blue jeans i stretchstof, behagelig pasform.",
+        description: "Bliv den bedste nybygger i den moderne klassikerEt ikonisk brætspil, hvor handel, strategi og held smelter sammen i kampen om at kolonisere en ny oe",
         price: 3,
         category: "Strategi",
         rating: 2,
@@ -74,7 +74,7 @@ const products = [
     {
         id: 8,
         title: "Det Dårlige selskab",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "Et hylende morsomt selskabsspil, hvor deltagerne dyster om at skabe de mest humoristiske og tossede sætninger og scenarier",
         price: 3,
         category: "Selskabsspil",
         rating: 1,
@@ -84,7 +84,7 @@ const products = [
         {
         id: 9,
         title: "Stratego",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "Stratego er det klassiske strategispil, der udfordrer dig til at tænke taktisk og planlægge dine træk nøje",
         price: 2,
         category: "Strategi",
         rating: 2,
@@ -94,7 +94,7 @@ const products = [
             {
         id: 10,
         title: "Bezzerwizzer",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "Bezzerwisser er det klassiske paratvidenspil, der udfordrer dine generelle kundskaber og lader dig drille modstanderne med taktiske træk.",
         price: 2,
         category: "Quizspil",
         rating: 2,
@@ -104,7 +104,7 @@ const products = [
             {
         id: 11,
         title: "Hitlister",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "Hitlister er det ultimative musik- og festspil, der udfordrer din musikviden og lader dig placere årtiers største hits i den rigtige rækkefølge.",
         price: 2,
         category: "Quizspil",
         rating: 2,
@@ -114,7 +114,7 @@ const products = [
                {
         id: 12,
         title: "Codenames",
-        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        description: "Codenames er det ultimative ord- og agent-spil, der udfordrer dine associationsevner og lader dig regne din spionageleders hemmelige hints ud.",
         price: 2,
         category: "Selskabsspil",
         rating: 3,
