@@ -9,7 +9,7 @@ const products = [
         category: "elektronik",
         rating: 5,
         color: "sort",
-        image: "https://via.placeholder.com/300x200?text=Smartphone+Pro+X"
+        image: "./img/Vildkatten.svg"
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ const products = [
         category: "elektronik",
         rating: 4,
         color: "hvid",
-        image: "https://via.placeholder.com/300x200?text=Hovedtelefoner"
+        image: "./img/trivial-pursuit.svg"
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ const products = [
         category: "tøj",
         rating: 4,
         color: "blå",
-        image: "https://via.placeholder.com/300x200?text=Bomuld+T-Shirt"
+        image: "./img/rummikib.svg"
     },
     {
         id: 4,
@@ -39,7 +39,7 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Designerstol"
+        image: "./img/partners.svg"
     },
     {
         id: 5,
@@ -49,7 +49,7 @@ const products = [
         category: "bøger",
         rating: 4,
         color: "sort",
-        image: "https://via.placeholder.com/300x200?text=JavaScript+Bog"
+        image: "./img/uno.svg"
     },
     {
         id: 6,
@@ -59,7 +59,7 @@ const products = [
         category: "elektronik",
         rating: 5,
         color: "sort",
-        image: "https://via.placeholder.com/300x200?text=Smartwatch+Series+7"
+        image: "./img/hint.svg"
     },
     {
         id: 7,
@@ -69,7 +69,7 @@ const products = [
         category: "tøj",
         rating: 3,
         color: "blå",
-        image: "https://via.placeholder.com/300x200?text=Jeans+Bukser"
+        image: "./img/catan.svg"
     },
     {
         id: 8,
@@ -79,6 +79,46 @@ const products = [
         category: "møbler",
         rating: 5,
         color: "brun",
-        image: "https://via.placeholder.com/300x200?text=Spisebord"
-    }
+        image: "./img/badselskab.svg"
+    },
+        {
+        id: 9,
+        title: "Stratego",
+        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        price: 8999,
+        category: "møbler",
+        rating: 5,
+        color: "brun",
+        image: "./img/stratego.svg"
+    },
+            {
+        id: 10,
+        title: "Bezzerwizzer",
+        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        price: 8999,
+        category: "møbler",
+        rating: 5,
+        color: "brun",
+        image: "./img/bexxerwizzer.svg"
+    },
+            {
+        id: 11,
+        title: "Hitlister",
+        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        price: 8999,
+        category: "møbler",
+        rating: 5,
+        color: "brun",
+        image: "./img/hitster.svg"
+    },
+               {
+        id: 12,
+        title: "Codenames",
+        description: "Stort spisebord i massivt eg med plads til 8 personer.",
+        price: 8999,
+        category: "møbler",
+        rating: 5,
+        color: "brun",
+        image: "./img/codenames.svg"
+    },
 ];
