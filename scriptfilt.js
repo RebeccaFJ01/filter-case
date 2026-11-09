@@ -20,8 +20,7 @@ product.category.toLowerCase().includes(searchText)
 const
 categories = Array.from(document.querySelectorAll('input[name="category"]:checked')).map(cb =>
     cb.value);
-    const
-Stemninger = Array.from(document.querySelectorAll('input[name="Stemninger"] :checked')).map(cb =>
+    const stemning = Array.from(document.querySelectorAll('input[name="stemning"]:checked')).map(cb =>
     cb.value);
 const minPrice = parseFloat(document.getElementById('min-price').value)
 const maxPrice = parseFloat(document.getElementById('max-price').value)
@@ -33,9 +32,9 @@ filteredProducts = filteredProducts.filter(product =>
     categories.includes(product.category)
 );
 }
-if (Stemninger.length>0) {
+if (stemning.length>0) {
 filteredProducts = filteredProducts.filter(product => 
-    Stemninger.includes(product.Stemning)
+    stemning.includes(product.stemning)
 );
 }
 if (!isNaN(minPrice)) {

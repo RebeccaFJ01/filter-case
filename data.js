@@ -8,7 +8,7 @@ const products = [
         price: 1,
         category: "Familiespil",
         rating: 1,
-        Stemning: "Nostalgi & Hygge",
+        stemning: "Nostalgi & Hygge",
         image: "./img/Vildkatten.svg"
     },
     {
@@ -18,7 +18,7 @@ const products = [
         price: 2,
         category: "Quizspil",
         rating: 2,
-        Stemning: "Nostalgi & Hygge",
+        stemning: "Nostalgi & Hygge",
         image: "./img/trivial-pursuit.svg"
     },
     {
@@ -28,7 +28,7 @@ const products = [
         price: 2,
         category: "Strategisk",
         rating: 2,
-        Stemning: "Nostalgi & Hygge",
+        stemning: "Nostalgi & Hygge",
         image: "./img/rummikib.svg"
     },
     {
@@ -38,7 +38,7 @@ const products = [
         price: 4,
         category: "Brætspil",
         rating: 2,
-        Stemning: "Drilsk & Konkurrence",
+        stemning: "Drilsk & Konkurrence",
         image: "./img/partners.svg"
     },
     {
@@ -48,7 +48,7 @@ const products = [
         price: 2,
         category: "Kortspil",
         rating: 1,
-        Stemning: "sort",
+        stemning: "sort",
         image: "./img/uno.svg"
     },
     {
@@ -58,7 +58,7 @@ const products = [
         price: 4,
         category: "Paratviden",
         rating: 1,
-        Stemning: "Fest & Latter",
+        stemning: "Fest & Latter",
         image: "./img/hint.svg"
     },
     {
@@ -68,7 +68,7 @@ const products = [
         price: 3,
         category: "Strategi",
         rating: 2,
-        Stemning: "blå",
+        stemning: "blå",
         image: "./img/catan.svg"
     },
     {
@@ -78,7 +78,7 @@ const products = [
         price: 3,
         category: "Selskabsspil",
         rating: 1,
-        Stemning: "Fest & Latter",
+        stemning: "Fest & Latter",
         image: "./img/badselskab.svg"
     },
         {
@@ -88,7 +88,7 @@ const products = [
         price: 2,
         category: "Strategi",
         rating: 2,
-        Stemning: "brun",
+        stemning: "brun",
         image: "./img/stratego.svg"
     },
             {
@@ -98,7 +98,7 @@ const products = [
         price: 2,
         category: "Quizspil",
         rating: 2,
-        Stemning: "brun",
+        stemning: "brun",
         image: "./img/bezzerwizzer.svg"
     },
             {
@@ -108,7 +108,7 @@ const products = [
         price: 2,
         category: "Quizspil",
         rating: 2,
-        Stemning: "Fest & Latter",
+        stemning: "Fest & Latter",
         image: "./img/hitster.svg"
     },
                {
@@ -118,7 +118,7 @@ const products = [
         price: 2,
         category: "Selskabsspil",
         rating: 3,
-        Stemning: "brun",
+        stemning: "brun",
         image: "./img/codenames.svg"
     },
 ];
