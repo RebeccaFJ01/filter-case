@@ -244,6 +244,6 @@ footer {
     text-decoration: none;
     color: #4a3b33;
 }
-.footer-nav a:active {
+.footer-nav a.active {
     color: #0f5c57
 }
