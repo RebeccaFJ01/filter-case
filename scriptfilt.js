@@ -56,9 +56,12 @@ filteredProducts = filteredProducts.filter(product =>
 
 //----------------- Håndtering af predefineret sorting -------------//
 const sorterEfter = document.getElementById("predefined-search").value;
-if (sorterEfter && sorterEfter === "svaerhedsgrad") {
-    filteredProducts.sort((a,b) => b.rating - a.rating) ;
+if (sorterEfter && sorterEfter === "svaerhedsgrad nem") {
+    filteredProducts.sort((a,b) => a.rating - b.rating) ;
 }
+if (sorterEfter && sorterEfter === "svaerhedsgrad svaer") {
+    filteredProducts.sort((a,b) => b.rating - a.rating) ;
+}    
 if (sorterEfter && sorterEfter === "pris-stigende") {
     filteredProducts.sort((a,b) => a.price - b.price) ;
 }
