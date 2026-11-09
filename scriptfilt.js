@@ -17,25 +17,22 @@ product.category.toLowerCase().includes(searchText)
 }
 
 //----------Håndtering af filtreringspanel---------//
-const
-categories = Array.from(document.querySelectorAll('input[name="category"]:checked')).map(cb =>
+const categories = Array.from(document.querySelectorAll('input[name="category"]:checked')).map(cb =>
     cb.value);
-    const
-Stemninger = Array.from(document.querySelectorAll('input[name="Stemninger"] :checked')).map(cb =>
+    const  stemning = Array.from(document.querySelectorAll('input[name="stemning"]:checked')).map(cb =>
     cb.value);
 const minPrice = parseFloat(document.getElementById('min-price').value)
 const maxPrice = parseFloat(document.getElementById('max-price').value)
-const
-rating = document.querySelector('input[name="rating"]:checked')?.value || null;
+const rating = document.querySelector('input[name="rating"]:checked')?.value || null;
 
 if (categories.length>0) {
 filteredProducts = filteredProducts.filter(product => 
     categories.includes(product.category)
 );
 }
-if (Stemninger.length>0) {
+if (stemning.length>0) {
 filteredProducts = filteredProducts.filter(product => 
-    Stemninger.includes(product.Stemning)
+    stemning.includes(product.stemning)
 );
 }
 if (!isNaN(minPrice)) {
