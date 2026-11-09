@@ -21,7 +21,7 @@ const
 categories = Array.from(document.querySelectorAll('input[name="category"]:checked')).map(cb =>
     cb.value);
     const
-colors = Array.from(document.querySelectorAll('input[name="colors"] :checked')).map(cb =>
+Stemninger = Array.from(document.querySelectorAll('input[name="Stemninger"] :checked')).map(cb =>
     cb.value);
 const minPrice = parseFloat(document.getElementById('min-price').value)
 const maxPrice = parseFloat(document.getElementById('max-price').value)
@@ -33,9 +33,9 @@ filteredProducts = filteredProducts.filter(product =>
     categories.includes(product.category)
 );
 }
-if (colors.length>0) {
+if (Stemninger.length>0) {
 filteredProducts = filteredProducts.filter(product => 
-    colors.includes(product.color)
+    Stemninger.includes(product.Stemning)
 );
 }
 if (!isNaN(minPrice)) {
