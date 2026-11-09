@@ -4,7 +4,7 @@ const products = [
     {
         id: 1,
         title: "Vildkatten",
-        description: "Avanceret smartphone med 5G, 128GB lager og 6,5\" skærm.",
+        description: "Er du lige så hurtigt som, en vildkat? Vær den første til at matche brikkerne med billederne på spillepladsen for at vinde. Nemt og hurtigt, til alle aldere ",
         price: 5999,
         category: "familiespil",
         rating: 5,
@@ -14,7 +14,7 @@ const products = [
     {
         id: 2,
         title: "Disney Trivial Pursuit",
-        description: "Noise-cancelling trådløse hovedtelefoner med 30 timers batteri.",
+        description: "Hidkalder alle disney fans. Nu et helt quiz spil dedikeret til alle fansene. Saml alle mickeys oste ved at svare rigtig på spørgsmålene og bliv kåret til disney MASTER.",
         price: 1299,
         category: "familiespil",
         rating: 4,
