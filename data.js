@@ -48,7 +48,7 @@ const products = [
         price: 2,
         category: "Kortspil",
         rating: 1,
-        stemning: "sort",
+        stemning: "Drilsk & Konkurrence",
         image: "./img/uno.svg"
     },
     {
@@ -68,7 +68,7 @@ const products = [
         price: 3,
         category: "Strategi",
         rating: 2,
-        stemning: "blå",
+        stemning: "Intens & Taktisk Strategi",
         image: "./img/catan.svg"
     },
     {
@@ -88,7 +88,7 @@ const products = [
         price: 2,
         category: "Strategi",
         rating: 2,
-        stemning: "brun",
+        stemning: "Intens & Taktisk Strategi",
         image: "./img/stratego.svg"
     },
             {
@@ -98,7 +98,7 @@ const products = [
         price: 2,
         category: "Quizspil",
         rating: 2,
-        stemning: "brun",
+        stemning: "Drilsk & Konkurrence",
         image: "./img/bezzerwizzer.svg"
     },
             {
@@ -118,7 +118,7 @@ const products = [
         price: 2,
         category: "Selskabsspil",
         rating: 3,
-        stemning: "brun",
+        stemning: "Tænksom & Agentstemning",
         image: "./img/codenames.svg"
     },
 ];
