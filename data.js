@@ -3,7 +3,7 @@
 const products = [
     {
         id: 1,
-        title: "Smartphone Pro X",
+        title: "Vildkatten",
         description: "Avanceret smartphone med 5G, 128GB lager og 6,5\" skærm.",
         price: 5999,
         category: "elektronik",
@@ -13,7 +13,7 @@ const products = [
     },
     {
         id: 2,
-        title: "Trådløse Hovedtelefoner",
+        title: "Disney Trivial Pursuit",
         description: "Noise-cancelling trådløse hovedtelefoner med 30 timers batteri.",
         price: 1299,
         category: "elektronik",
@@ -23,7 +23,7 @@ const products = [
     },
     {
         id: 3,
-        title: "Bomuld T-Shirt",
+        title: "Rummikub",
         description: "100% bomuld T-shirt i forskellige farver og størrelser.",
         price: 199,
         category: "tøj",
@@ -33,7 +33,7 @@ const products = [
     },
     {
         id: 4,
-        title: "Designerstol",
+        title: "Partners",
         description: "Moderne designerstol i ægte læder, perfekt til stuen.",
         price: 3499,
         category: "møbler",
@@ -43,7 +43,7 @@ const products = [
     },
     {
         id: 5,
-        title: "Programmeringsbog",
+        title: "Uno",
         description: "Lær JavaScript på 30 dage - komplet guide for begyndere.",
         price: 299,
         category: "bøger",
@@ -53,7 +53,7 @@ const products = [
     },
     {
         id: 6,
-        title: "Smartwatch Series 7",
+        title: "Hint",
         description: "Smartwatch med hjertefrekvensmåler, GPS og 7 dages batteri.",
         price: 2499,
         category: "elektronik",
@@ -63,7 +63,7 @@ const products = [
     },
     {
         id: 7,
-        title: "Jeans Bukser",
+        title: "Catan",
         description: "Klassiske blue jeans i stretchstof, behagelig pasform.",
         price: 499,
         category: "tøj",
@@ -73,7 +73,7 @@ const products = [
     },
     {
         id: 8,
-        title: "Spisebord",
+        title: "Det Dårlige selskab",
         description: "Stort spisebord i massivt eg med plads til 8 personer.",
         price: 8999,
         category: "møbler",
