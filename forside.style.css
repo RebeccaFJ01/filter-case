@@ -17,16 +17,10 @@ body {
 }
 
 #cat {
-   display: flex;
+    display: flex;
   justify-content: center; /* horizontal */
   align-items: center;     /* vertical */
   min-height: calc(100vh - 100px); /* viewport minus your 100px header */
-}
-
-#martin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 h1 a {
@@ -43,7 +37,7 @@ header {
     align-items: center;
     padding: 10px 20px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url(./img/board.games.png) lightgray 50% / cover no-repeat;
-
+    
 }
 
 header i {
@@ -258,6 +252,6 @@ footer {
     text-decoration: none;
     color: #4a3b33;
 }
-.footer-nav a.active {
-    color: #0f5c57;
+.footer-nav a:active {
+    color: #0f5c57
 }
