@@ -20,7 +20,8 @@ product.category.toLowerCase().includes(searchText)
 const
 categories = Array.from(document.querySelectorAll('input[name="category"]:checked')).map(cb =>
     cb.value);
-    const stemning = Array.from(document.querySelectorAll('input[name="stemning"]:checked')).map(cb =>
+    const
+Stemninger = Array.from(document.querySelectorAll('input[name="Stemninger"] :checked')).map(cb =>
     cb.value);
 const minPrice = parseFloat(document.getElementById('min-price').value)
 const maxPrice = parseFloat(document.getElementById('max-price').value)
@@ -32,9 +33,9 @@ filteredProducts = filteredProducts.filter(product =>
     categories.includes(product.category)
 );
 }
-if (stemning.length>0) {
+if (Stemninger.length>0) {
 filteredProducts = filteredProducts.filter(product => 
-    stemning.includes(product.stemning)
+    Stemninger.includes(product.Stemning)
 );
 }
 if (!isNaN(minPrice)) {
@@ -55,7 +56,7 @@ filteredProducts = filteredProducts.filter(product =>
 
 //----------------- Håndtering af predefineret sorting -------------//
 const sorterEfter = document.getElementById("predefined-search").value;
-if (sorterEfter && sorterEfter === "populaere") {
+if (sorterEfter && sorterEfter === "svaerhedsgrad") {
     filteredProducts.sort((a,b) => b.rating - a.rating) ;
 }
 if (sorterEfter && sorterEfter === "pris-stigende") {
