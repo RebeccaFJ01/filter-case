@@ -10,7 +10,7 @@
     --secondary-color: #3498db;
     --accent-color: #2ecc71;
     --text-color: #333;
-    --light-gray: #ecf0f1;
+    --light-gray: #f6f1ea;
     --medium-gray: #bdc3c7;
     --dark-gray: #7f8c8d;
     --white: #ffffff;
@@ -24,6 +24,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--light-gray);
+    padding-bottom: 125px;
 }
 
 .container {
@@ -496,4 +497,34 @@ dialog::backdrop {
 
 .filter-content::-webkit-scrollbar-thumb:hover {
     background: var(--dark-gray);
+}
+
+
+footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 120%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #4a3b33;
+    text-decoration: none;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+.footer-nav a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #4a3b33;
+}
+.footer-nav a:active {
+    color: #0f5c57
 }

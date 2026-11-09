@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attic</title>
+    <link rel="stylesheet" href="forside.style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" class="title">Attic</a></h1>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <div class="dropdown-content">
+                <a href="Forside.html"><i class="fa-regular fa-heart"></i>Likede spil</a>
+                <a href="profile.html"><i class="fa-regular fa-user"></i>Profil</a>
+                <a href="english.html"><i class="fa-solid fa-language"></i>English</a>
+            </div>
+    </header>
+    <main>
+        <section class="search">
+            <icon name="fa-solid fa-magnifying-glass"></icon>
+            <input type="text" placeholder="Søg efter spil..." id="searchInput" variant="borderless">
+        </section>
+        <section class="slideshow">
+
+        </section>
+        <section class="turnering">
+            <div class="turn-content">
+                <div class turn-text>
+                    <h3>Turnering</h3>
+                    <p>Spil med om et<br>gavekort i kantinen!</p>
+                    <button class="turn-btn">Spil Med</button>
+                </div>
+                <img src="img/trophy.svg" alt="trofæ">
+            </div>
+        </section>
+        <section class="gotm">
+            <article class="gotm-text">
+                <p id="gotm-highlight"><i class="fa-solid fa-star"></i>Månedens Spil!</p>
+                <p id="month">Oktober 2026</p>
+            </article>
+            <article class="gotm-card">
+                <img src="img/Partners.jpg" alt="Månedens spil">
+                <div class="gotm-card-text">
+                    <h3>Partners</h3>
+                    <p class="game-fakta">Partners er et strategisk brætspil, hvor spillere danner par og konkurrerer om at opnå flest point ved at placere deres brikker på spillebrættet. Spillet kombinerer elementer af taktik, samarbejde og planlægning, hvilket gør det til en spændende oplevelse for både nye og erfarne spillere.</p>
+                    <div class="gotm-tags">
+                        <span class="tag"><i class="fa-solid fa-users"></i>4</span>
+                        <span class="tag"><i class="fa-regular fa-clock"></i>60 min</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <a href="Forside.html"><i class="fa-regular fa-house"></i>Hjem</a>
+            <a href="events.html"><i class="fa-regular fa-calendar"></i>Events</a>
+            <a href="index.html"><i class="fa-solid fa-dice"></i>Spil</a>
+            <a href="friends.html"><i class="fa-regular fa-user"></i>Venner</a>
+        </nav>
+    </footer>
+    <script src="data.js"></script>
+    <script src="scriptui.js"></script>
+    <script src="scriptfilt.js"></script>
+</body>
+</html>

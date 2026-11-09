@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 768px)  {
+    
+}
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: #f6f1ea;
+}
+
+h1 a {
+    font-family: 'Bubblegum Sans', sans-serif;
+    font-weight: normal;
+    color : white;
+    font-size: 300%;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#9d8778;
+}
+
+header i {
+    color: white;
+    height: auto;
+    width: 100%;
+    
+}
+header i:hover {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover {
+    cursor: pointer;
+}
+.dropbtn {
+    background-color: #897769;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 15px;
+    position: relative;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.dropbtn i {
+    font-size: 200%;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: auto;
+    right: 0;
+
+    background-color: #897769;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: white;
+    font-size: 120%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    /* Animation */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+
+    transition: opacity 0.3s ease-in,
+                transform 0.3s ease-in,
+                visibility 0.3s ease-in;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 10px;
+    position: relative;
+}
+
+.search input[type="text"] {
+    display: flex;
+    position: relative;
+    font-size: 150%;
+    right: 0;
+    left: auto;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    color: #897769;
+}
+main {
+    padding-bottom: 75px; /* Adjust this value based on the height of your footer */
+}
+
+.turnering {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding: 20px;
+    background-color: #a9dfd9;
+    border-radius: 10px;
+}
+.turn-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 3%;
+    width: 100%;
+}
+.turn-content img {
+    width: 20%;
+    height: auto;
+}
+.turn-text {
+    font-size: 120%;
+    color: #3c3028;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+.turn-btn {
+    background-color: #0f5c57;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 5% 10% 5% 10%;
+    font-size: 150%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-family: 'jua', sans-serif;
+}
+
+.gotm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    flex-direction: column;
+}
+.gotm-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding: 0 2% 0 2%;
+}
+#gotm-highlight {
+    color: #0f5c57;
+    font-size: 200%;
+    font-family: 'Bubblegum Sans', sans-serif;
+    font-weight: light;
+}
+#gotm-highlight i {
+    color: #f2b83a;
+}
+#month {
+    font-size: 100%;
+    color: #0f5c57;
+    font-family: 'figtree', sans-serif;
+}
+.gotm-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+}
+.gotm-card img {
+    width: 50%;
+    height: auto;
+}
+.gotm-tags {
+    margin-top: 20px;
+}
+.tag {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #e0f5f1;
+    border: none;
+}
+.game-fakta {
+    padding-right: 10%;
+}
+
+footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 120%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #4a3b33;
+    text-decoration: none;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+.footer-nav a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #4a3b33;
+}
+.footer-nav a:active {
+    color: #0f5c57
+}
