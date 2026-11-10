@@ -114,12 +114,12 @@ header i:hover {
     transform: translateY(0);
 }
 
-
-/* .container {
+/*
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-} */
+}
 
 /* Header */
 header {
@@ -596,6 +596,7 @@ dialog::backdrop {
     background: var(--dark-gray);
 }
 
+
 footer {
     background-color: white;
     padding: 20px;
@@ -622,7 +623,7 @@ footer {
     color: #4a3b33;
 }
 .footer-nav a.active {
-    color: #0f5c57;
+    color: #0f5c57
 }
 
 button#dialog-close
