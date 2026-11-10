@@ -9,7 +9,7 @@ const products = [
         category: "Familiespil",
         rating: 1,
         stemning: "Nostalgi & Hygge",
-        image: "img/Vildkatten.svg"
+        image: "img/vildkatten.svg"
     },
     {
         id: 2,
