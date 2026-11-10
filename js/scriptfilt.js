@@ -66,7 +66,7 @@ if (sorterEfter && sorterEfter === "svaerhedsgrad svaer") {
 if (sorterEfter && sorterEfter === "pris-stigende") {
     filteredProducts.sort((a,b) => a.players - b.players);
 }
-if (sorterEfter && (sorterEfter === "pris-faldende" || sorterEfter === "pris-falende")) {
+if (sorterEfter && (sorterEfter === "pris-faldende" || sorterEfter === "pris-faldende")) {
     filteredProducts.sort((a,b) => b.players - a.players);
 }
 
