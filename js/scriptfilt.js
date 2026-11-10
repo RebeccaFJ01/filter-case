@@ -21,8 +21,8 @@ const categories = Array.from(document.querySelectorAll('input[name="category"]:
     cb.value);
     const  stemning = Array.from(document.querySelectorAll('input[name="stemning"]:checked')).map(cb =>
     cb.value);
-const minPlayers = parseFloat(document.getElementById('min-players').value)
-const maxPlayers = parseFloat(document.getElementById('max-players').value)
+const minplayers = parseFloat(document.getElementById('min-players').value)
+const maxplayers = parseFloat(document.getElementById('max-players').value)
 const rating = document.querySelector('input[name="rating"]:checked')?.value || null;
 
 if (categories.length>0) {
@@ -37,15 +37,15 @@ if (stemning.length>0) {
     );
 }
 
-    if (!isNaN(minPlayers)) {
+    if (!isNaN(minplayers)) {
     filteredProducts = filteredProducts.filter(product => 
-    product.players >= minPlayers
+    product.players >= minplayers
     );
 }
 
-if (!isNaN(maxPlayers)) {
+if (!isNaN(maxplayers)) {
     filteredProducts = filteredProducts.filter(product => 
-    product.players <= maxPlayers
+    product.players <= maxplayers
     );
 }
 
@@ -64,10 +64,10 @@ if (sorterEfter && sorterEfter === "svaerhedsgrad svaer") {
     filteredProducts.sort((a,b) => b.rating - a.rating) ;
 }    
 if (sorterEfter && sorterEfter === "pris-stigende") {
-    filteredProducts.sort((a,b) => a.players - b.players) ;
+    filteredProducts.sort((a,b) => a.players - b.players);
 }
-if (sorterEfter && sorterEfter === "pris-falende") {
-    filteredProducts.sort((a,b) => b.players - a.players) ;
+if (sorterEfter && (sorterEfter === "pris-faldende" || sorterEfter === "pris-falende")) {
+    filteredProducts.sort((a,b) => b.players - a.players);
 }
 
 displayProducts (filteredProducts);
