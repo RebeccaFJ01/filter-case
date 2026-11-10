@@ -10,10 +10,10 @@ const
 searchText=document.getElementById("search-input").value.toLowerCase().trim();
 
 if (searchText) {
-filteredProducts = filteredProducts.filter(product =>product.title.toLowerCase().includes(searchText)|| 
-product.description.toLowerCase().includes(searchText)||
-product.category.toLowerCase().includes(searchText)
-);
+    filteredProducts = filteredProducts.filter(product =>product.title.toLowerCase().includes(searchText)|| 
+    product.description.toLowerCase().includes(searchText)||
+    product.category.toLowerCase().includes(searchText)
+    );
 }
 
 //----------Håndtering af filtreringspanel---------//
@@ -26,29 +26,33 @@ const maxPlayers = parseFloat(document.getElementById('max-players').value)
 const rating = document.querySelector('input[name="rating"]:checked')?.value || null;
 
 if (categories.length>0) {
-filteredProducts = filteredProducts.filter(product => 
+    filteredProducts = filteredProducts.filter(product => 
     categories.includes(product.category)
-);
+    );
 }
+
 if (stemning.length>0) {
-filteredProducts = filteredProducts.filter(product => 
+    filteredProducts = filteredProducts.filter(product => 
     stemning.includes(product.stemning)
-);
+    );
 }
-if (!isNaN(minPlayers)) {
-filteredProducts = filteredProducts.filter(product => 
+
+    if (!isNaN(minPlayers)) {
+    filteredProducts = filteredProducts.filter(product => 
     product.players >= minPlayers
-);
+    );
 }
+
 if (!isNaN(maxPlayers)) {
-filteredProducts = filteredProducts.filter(product => 
+    filteredProducts = filteredProducts.filter(product => 
     product.players <= maxPlayers
-);
+    );
 }
+
 if (rating !== null) {
-filteredProducts = filteredProducts.filter(product =>
+    filteredProducts = filteredProducts.filter(product =>
     product.rating >= rating
-);
+    );
 }
 
 //----------------- Håndtering af predefineret sorting -------------//
@@ -69,11 +73,10 @@ if (sorterEfter && sorterEfter === "pris-falende") {
 displayProducts (filteredProducts);
 };
 
-document.getElementById("search-input").addEventListener("input",
-    filtrerProdukter);
-document.getElementById("predefined-search").addEventListener("change",
-    filtrerProdukter);
+document.getElementById("search-input").addEventListener("input",filtrerProdukter);
+document.getElementById("predefined-search").addEventListener("change",filtrerProdukter);
 document.getElementById("apply-filters").addEventListener("click", function() {
-filtrerProdukter();
-closeFilterPanel();
-});
+    filtrerProdukter();
+    closeFilterPanel();
+    }
+);
