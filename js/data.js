@@ -9,7 +9,7 @@ const products = [
         category: "Familiespil",
         rating: 1,
         stemning: "Nostalgi & Hygge",
-        image: "../img/Vildkatten.svg"
+        image: "img/Vildkatten.svg"
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ const products = [
         category: "Quizspil",
         rating: 2,
         stemning: "Nostalgi & Hygge",
-        image: "../img/trivial-pursuit.svg"
+        image: "img/trivial-pursuit.svg"
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ const products = [
         category: "Strategisk",
         rating: 2,
         stemning: "Nostalgi & Hygge",
-        image: "../img/rummikib.svg"
+        image: "img/rummikib.svg"
     },
     {
         id: 4,
@@ -39,7 +39,7 @@ const products = [
         category: "Brætspil",
         rating: 2,
         stemning: "Drilsk & Konkurrence",
-        image: "../img/partners.svg"
+        image: "img/partners.svg"
     },
     {
         id: 5,
@@ -49,7 +49,7 @@ const products = [
         category: "Kortspil",
         rating: 1,
         stemning: "Drilsk & Konkurrence",
-        image: "../img/uno.svg"
+        image: "img/uno.svg"
     },
     {
         id: 6,
@@ -59,7 +59,7 @@ const products = [
         category: "Paratviden",
         rating: 1,
         stemning: "Fest & Latter",
-        image: "../img/hint.svg"
+        image: "img/hint.svg"
     },
     {
         id: 7,
@@ -69,7 +69,7 @@ const products = [
         category: "Strategi",
         rating: 2,
         stemning: "Intens & Taktisk Strategi",
-        image: "../img/catan.svg"
+        image: "img/catan.svg"
     },
     {
         id: 8,
@@ -79,7 +79,7 @@ const products = [
         category: "Selskabsspil",
         rating: 1,
         stemning: "Fest & Latter",
-        image: "../img/badselskab.svg"
+        image: "img/badselskab.svg"
     },
         {
         id: 9,
@@ -89,7 +89,7 @@ const products = [
         category: "Strategi",
         rating: 2,
         stemning: "Intens & Taktisk Strategi",
-        image: "../img/stratego.svg"
+        image: "img/stratego.svg"
     },
             {
         id: 10,
@@ -99,7 +99,7 @@ const products = [
         category: "Quizspil",
         rating: 2,
         stemning: "Drilsk & Konkurrence",
-        image: "../img/bezzerwizzer.svg"
+        image: "img/bezzerwizzer.svg"
     },
             {
         id: 11,
@@ -109,7 +109,7 @@ const products = [
         category: "Quizspil",
         rating: 2,
         stemning: "Fest & Latter",
-        image: "../img/hitster.svg"
+        image: "img/hitster.svg"
     },
                {
         id: 12,
@@ -119,6 +119,6 @@ const products = [
         category: "Selskabsspil",
         rating: 3,
         stemning: "Tænksom & Agentstemning",
-        image: "../img/codenames.svg"
+        image: "img/codenames.svg"
     },
 ];
