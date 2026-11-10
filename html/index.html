@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkt Søgning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<!---Category ændret til Genre. Pris interval ændret til antal spillere.  Vurdering ændret til sværhedsgrad.  Farve ændret til stemning-->
+<body>
+    <div class="container">
+       <header>
+        <h1><a href="index.html" class="title">ATTIC</a></h1>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <div class="dropdown-content">
+                <a href="Forside.html"><i class="fa-regular fa-heart"></i>Likede spil</a>
+                <a href="profile.html"><i class="fa-regular fa-user"></i>Profil</a>
+                <a href="english.html"><i class="fa-solid fa-language"></i>English</a>
+            </div> 
+           </header>
+        <main>
+            <div class="search-container">
+                <input type="search" id="search-input" placeholder="Søg efter spil..." class="search-input">
+
+                <select id="predefined-search" class="predefined-select">
+                    <option value="">---- Sorter efter ----</option>
+                    <option value="svaerhedsgrad nem">Sværhedsgrad (nem til svær)</option>
+                     <option value="svaerhedsgrad svaer">Sværhedsgrad (svær til nem)</option>
+                    <option value="pris-stigende">Spillere: Lav til høj</option>
+                    <option value="pris-faldende">Spillere: Høj til lav</option>
+                </select>
+
+                <button id="filter-toggle" class="filter-button">
+                    <span>🔍 Filtrer</span>
+                </button>
+            </div>
+
+            <div id="filter-panel" class="filter-panel">
+                <div class="filter-header">
+                    <h2>Filtrer Spil</h2>
+                    <button id="close-filter" class="close-button">&times;</button>
+                </div>
+
+                <div class="filter-content">
+                    <div class="filter-group">
+                        <label class="filter-label">Genre</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="category" value="Familiespil"> Familiespil
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="category" value="Quizspil"> Quiz
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="category" value="Strategi"> Strategi
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="category" value="Brætspil"> Brætspil
+                            </label>
+                             <label class="checkbox-label">
+                                <input type="checkbox" name="category" value="Paratviden"> Paratviden
+                            </label>
+                             <label class="checkbox-label">
+                                <input type="checkbox" name="category" value="Selskabsspil"> Selskabsspil
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="filter-label">Antal spillere</label>
+                        <div class="players-range">
+                            <input type="number" id="min-players" placeholder="Min" class="players-input">
+                            <span class="players-separator">-</span>
+                            <input type="number" id="max-players" placeholder="Max" class="players-input">
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="filter-label">Sværhedsgrad</label>
+                        <div class="rating-group">
+                            <!-- <label class="rating-label">
+                                <input type="radio" name="rating" value="5"> ★★★★★
+                            </label>
+                            <label class="rating-label">
+                                <input type="radio" name="rating" value="4"> ★★★★
+                            </label> -->
+                            <label class="rating-label">
+                                <input type="radio" name="rating" value="3"> ★★★
+                            </label>
+                            <label class="rating-label">
+                                <input type="radio" name="rating" value="2"> ★★
+                            </label>
+                            <label class="rating-label">
+                                <input type="radio" name="rating" value="1"> ★
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="filter-label">Stemning</label>
+                        <div class="Stemning-group">
+                            <label class="Stemning-label">
+                                <input type="checkbox" name="stemning" value="Nostalgi & Hygge"> Nostalgi & Hygge 
+                            </label>
+                            <label class="Stemning-label">
+                                <input type="checkbox" name="stemning" value="Drilsk & Konkurrence"> Drilsk & Konkurrence
+                            </label>
+                            <label class="Stemning-label">
+                                <input type="checkbox" name="stemning" value="Fest & Latter"> Fest & Latter
+                            </label>
+                            <label class="Stemning-label">
+                                <input type="checkbox" name="stemning" value="Intens & Taktisk Strategi"> Intens & Taktisk Strategi
+                            </label>
+                            <label class="Stemning-label">
+                                <input type="checkbox" name="stemning" value="Tænksom & Agentstemning"> Tænksom & Agentstemning
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-footer">
+                    <button id="apply-filters" class="apply-button">Vis Spil</button>
+                </div>
+            </div>
+
+            <div id="products-container" class="products-container">
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Produkt Katalog</p>
+        </footer>
+    </div>
+
+    <dialog id="product-dialog">
+        <article class="dialog-content">
+            <img id="dialog-image" src="" alt="" class="product-image">
+            <h2 id="dialog-title"></h2>
+            <p id="dialog-description"></p>
+            <div class="product-meta">
+                <span id="dialog-players" class="product-players"></span>
+                <span id="dialog-category" class="product-category"></span>
+            </div>
+            <div id="dialog-rating" class="product-rating"></div>
+            <menu class="dialog-actions">
+                <button id="dialog-Reserve" value="cancel">Reserver spil</button>
+                <button id="dialog-close" value="cancel">Luk</button>
+            </menu>
+        </article>
+    </dialog>
+
+    <div id="overlay" class="overlay"></div>
+    <script src="data.js"></script>
+    <script src="scriptui.js"></script>
+    <script src="scriptfilt.js"></script>
+</body>
+ <footer>
+        <nav class="footer-nav">
+            <a href="Forside.html"><i class="fa-regular fa-house"></i>Hjem</a>
+            <a href="events.html"><i class="fa-regular fa-calendar"></i>Events</a>
+            <a href="index.html" class="active"><i class="fa-solid fa-dice"></i>Spil</a>
+            <a href="venner.html"><i class="fa-regular fa-user"></i>Venner</a>
+        </nav>
+    </footer>
+
+</html>
